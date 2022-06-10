@@ -1,10 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { MarkdownContext } from "../context/markdownContext";
 
-
 const defaultMarkdown = 
 `# Markdown Editor Previewer<hr>
-![github](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
 ## This is a sub-heading
 This is one git command: \`git add\`
 \`\`\`
@@ -13,7 +11,7 @@ git
 \`\`\`
 by **Caique De Brito**
 - [linkedin](https://www.linkedin.com/in/caiquedebrito/)
-- Github
+- ![iconmonstr-github-1](https://user-images.githubusercontent.com/88737351/173064860-a1d8458e-bc50-47d2-add7-8fe30ae49892.svg) Github
 > never stop to learning
 ` 
 
