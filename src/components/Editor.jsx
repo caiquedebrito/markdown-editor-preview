@@ -24,22 +24,38 @@ export function Editor() {
     displayDefaultMarkdown()
   }, [])
 
+  function checkMarkdownStoraged() {
+    return sessionStorage.getItem("markdown")
+  }
+
   function displayDefaultMarkdown() {
     setMarkdown(defaultMarkdown)
   }
 
   function handleChange(event) {
     setMarkdown(event.target.value)
+    sessionStorage.setItem("markdown", markdown)
   }
 
   function deleteMarkdown() {
-    setMarkdown('')
+    setMarkdown("")
+    sessionStorage.removeItem("markdown")
   }
 
   function copyMarkdown() {
     const editor = document.getElementById("editor")
     editor.select()
     document.execCommand('copy')
+    alertThatTextWasCopied()
+  }
+
+  function alertThatTextWasCopied() {
+    const messageTextCopied = document.querySelector(".messageTextCopied")
+    messageTextCopied.style.display = "block"
+    const idTime = setInterval(() => {
+      messageTextCopied.style.display = "none"
+      clearInterval(idTime)
+    }, 1500)
   }
 
   return (
@@ -49,6 +65,7 @@ export function Editor() {
       </textarea>
       <button onClick={copyMarkdown} id="copy">copy</button>
       <button onClick={deleteMarkdown}>delete</button>
+      <span className="messageTextCopied">copied</span>
     </div>
   );
 }
