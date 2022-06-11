@@ -1,25 +1,16 @@
 import React, { useContext, useEffect } from "react";
 import { MarkdownContext } from "../context/markdownContext";
-
-const defaultMarkdown = 
-`# Markdown Editor Previewer<hr>
-## This is a sub-heading
-This is one git command: \`git add\`
-\`\`\`
-git commit 
-git 
-\`\`\`
-by **Caique De Brito**
-- [linkedin](https://www.linkedin.com/in/caiquedebrito/)
-- ![iconmonstr-github-1](https://user-images.githubusercontent.com/88737351/173064860-a1d8458e-bc50-47d2-add7-8fe30ae49892.svg) Github
-> never stop to learning
-` 
+import { defaultMarkdown } from "./defaultMarkdown";
 
 export function Editor() {
   const {markdown, setMarkdown} = useContext(MarkdownContext)
 
   useEffect(() => {
-    displayDefaultMarkdown()
+    if (checkMarkdownStoraged()) {
+      rescueMarkdownStoraged()
+    } else {
+      displayDefaultMarkdown()
+    }
   }, [])
 
   function checkMarkdownStoraged() {
@@ -28,6 +19,11 @@ export function Editor() {
 
   function displayDefaultMarkdown() {
     setMarkdown(defaultMarkdown)
+  }
+
+  function rescueMarkdownStoraged() {
+    const markdownStoraged = sessionStorage.getItem("markdown")
+    setMarkdown(markdownStoraged)
   }
 
   function handleChange(event) {
