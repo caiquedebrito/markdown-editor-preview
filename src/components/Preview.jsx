@@ -3,6 +3,11 @@ import { MarkdownContext } from "../context/markdownContext"
 import { marked } from "marked"
 import DOMPurify from "dompurify"
 
+marked.setOptions({
+    gfm: true,
+    breaks: true
+})
+
 export function Preview() {
     const {markdown} = useContext(MarkdownContext)
 
