@@ -44,7 +44,7 @@ export function Editor() {
   }
 
   function alertThatTextWasCopied() {
-    const messageTextCopied = document.querySelector(".messageTextCopied")
+    const messageTextCopied = document.querySelector(".message-text-copied")
     messageTextCopied.style.display = "block"
     const idTime = setInterval(() => {
       messageTextCopied.style.display = "none"
@@ -59,7 +59,7 @@ export function Editor() {
       </textarea>
       <button onClick={copyMarkdown} id="copy">copy</button>
       <button onClick={deleteMarkdown}>delete</button>
-      <span className="messageTextCopied">copied</span>
+      <span className="message-text-copied">copied</span>
     </div>
   );
 }
