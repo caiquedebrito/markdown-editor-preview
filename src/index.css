@@ -10,9 +10,11 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  flex: 1 1 49vw;
+  height: 97vh;
 }
 
-.messageTextCopied {
+.message-text-copied {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,17 +29,24 @@
 
 #preview, #editor {
   padding: 1rem;
-  max-height: 500px;
-  max-width: 400px;
-  height: 400px;
-  width: 300px;
+  line-height: 2.4rem;
   overflow: auto;
-  resize: both;
+  resize: none;
+  width: 48vw;
+  height: 100%;
+}
+
+@media (max-width: 540px) {
+  .container {
+    flex-basis: 100vw;
+  }
+  #preview, #editor {
+    width: 100%;
+  }
 }
 
 #editor {
-  width: 378px;
-  height: 344px;
+  line-height: 1.5rem;
 }
 
 #editor:focus {
