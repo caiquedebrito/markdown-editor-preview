@@ -17,7 +17,7 @@
 </p>
 
 ## DESCRIÇÃO
-Markdown Editor Preview é um editor para \`github markdown\` com vizualização do código ao vivo. É um projeto de conclusão de curso do curso [Bibliotecas de desenvolvimento front-end](https://www.freecodecamp.org/portuguese/learn/front-end-development-libraries/) oferecido pela **freecodecamp**.
+Markdown Editor Preview é um editor para `github markdown` com vizualização do código ao vivo. É um projeto de conclusão de curso do curso [Bibliotecas de desenvolvimento front-end](https://www.freecodecamp.org/portuguese/learn/front-end-development-libraries/) oferecido pela **freecodecamp**.
 
 ### FUNCIONALIDADES
 
@@ -44,12 +44,12 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ### RODANDO A APLICAÇÃO LOCALMENTE
 
-\`\`\`bash
+```bash
 # Clone este repositório
-$ git clone <link do repositório>
+$ git clone https://github.com/caiquedebrito/markdown-editor-preview.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd projeto
+$ cd markdown-editor-preview
 
 # Instale as dependências
 $ npm install
@@ -58,12 +58,12 @@ $ npm install
 $ npm run dev
 
 # A aplicação inciará na porta:3000 - acesse <http://localhost:3000>
-\`\`\`
+```
 
 
 ### LICENÇA
 
-(NOME DO PROJETO) é licenciado pelo MIT, conforme encontrado no arquivo de [LICENÇA](./LICENSE)
+MARKDOWN EDITOR PREVIEW é licenciado pelo MIT, conforme encontrado no arquivo de [LICENÇA](./LICENSE)
 
 ### AUTOR
 ---
