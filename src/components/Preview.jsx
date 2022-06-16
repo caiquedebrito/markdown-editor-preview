@@ -23,7 +23,7 @@ export function Preview() {
 
     return (
         <div className="container">
-            <h2 className="header">Previewer</h2>
+            <h2 className="header">Preview</h2>
             <div id="preview" dangerouslySetInnerHTML={renderMarkdown()}></div>
         </div>
     )
