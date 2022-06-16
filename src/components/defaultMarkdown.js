@@ -1,5 +1,5 @@
-export const defaultMarkdown = `
-<h1 align="center">[MARKDOWN EDITOR PREVIEW](link do deploy)</h1>
+export const defaultMarkdown = 
+`# MARKDOWN EDITOR PREVIEW
 
 <div align="center">
 
@@ -9,24 +9,29 @@ export const defaultMarkdown = `
 
 <hr>
 
-<img src="" alt="Gif do funcionamento do projeto" align="center"/>
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/88737351/174131867-26b73ab6-db15-4614-aeb3-990ec14b45f9.png" alt="Gif do funcionamento do projeto"/>
+</div>
 
 <p align="center">
 <a href="#descrição">DESCRIÇÃO</a> • <a href="#funcionalidades">FUNCIONALIDADES</a>  • <a href="#tecnologias">TECNOLOGIAS</a> • <a href="#como-usar">COMO USAR</a> • <a href="#licença">LICENÇA</a> • <a href="#autor">AUTOR</a>
 </p>
 
 ## DESCRIÇÃO
-Descrição do projeto
+Markdown Editor Preview é um editor para \`github markdown\` com vizualização do código ao vivo. É um projeto de conclusão de curso do curso [Bibliotecas de desenvolvimento front-end](https://www.freecodecamp.org/portuguese/learn/front-end-development-libraries/) oferecido pela **freecodecamp**.
 
 ### FUNCIONALIDADES
+
+- [x] Escrever e editar markdown
+- [x] Vizualizar as alterações do markdown
+- [x] Deletar e copiar o código markdown
 
 ### TECNOLOGIAS
 
 As seguintes tecnologias foram utilizadas na construção do projeto:
 
-- [Tech 1](link)
-- [Tech 2](link)
-- [Tech 3](link)
+- [React JS](https://reactjs.org/)
+- [Marked JS](https://marked.js.org/)
 
 
 
@@ -68,7 +73,7 @@ $ npm run dev
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/88737351?v=4" width="100px;" alt="Caique De Brito"/>
 </a>
 
-Feito por <b>Caique De Brito</b>🦾
+> Feito por <b>Caique De Brito</b>🦾
 
 👋🏽 Entre em contato!
 
