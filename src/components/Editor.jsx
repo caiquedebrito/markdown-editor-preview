@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { MarkdownContext } from "../context/markdownContext";
+import { MarkdownContext } from "../context/MarkdownContext";
 import { defaultMarkdown } from "./defaultMarkdown";
 
 export function Editor() {

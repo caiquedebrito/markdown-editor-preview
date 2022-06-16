@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { MarkdownContext } from "../context/markdownContext"
+import { MarkdownContext } from "../context/MarkdownContext"
 import { marked } from "marked"
 import DOMPurify from "dompurify"
 
