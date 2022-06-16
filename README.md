@@ -1,4 +1,4 @@
-# MARKDOWN EDITOR PREVIEW
+<h1 align="center">✏️MARKDOWN EDITOR PREVIEW</h1>
 
 <div align="center">
 
